@@ -1,6 +1,7 @@
 // Packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 // An array of questions for user input
 const questions = [
@@ -27,7 +28,7 @@ const questions = [
       {
         type: 'input',
         name: 'contributing',
-        message: 'What are the contribution guidelines?',
+        message: 'Who contributed to this application?',
       },
       {
         type: 'input',
