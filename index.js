@@ -57,12 +57,11 @@ const questions = [
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) => {
         if (err) {
-          return console.log(err);
+            return console.log(err);
         }
         console.log('Successfully created README.md!');
-      });
+    });
 }
-
 // A function to initialize app
 function init() {
     inquirer.prompt(questions).then((responses) => {
